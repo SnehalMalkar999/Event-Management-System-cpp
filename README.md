@@ -1,160 +1,80 @@
-# Event Management System
+# EVENT MANAGEMENT SYSTEM
 
-##  Project Overview
-
-The **Event Management System** is a console-based C++ application developed using **Object-Oriented Programming (OOP)** and **File Handling**.
-
+The Event Management System is a console-based C++ application developed using Object-Oriented Programming (OOP) and File Handling.
 The system allows an administrator to manage events and users to register, login, book events, cancel bookings, and add reviews.
+# Objectives
+1.Manage events efficiently.
+2.Allow users to register and login.
+3.Allow users to view and book events.
+4.Prevent duplicate event bookings.
+5.Allow users to cancel bookings.
+6.Allow users to add reviews for booked events.
+7.Generate event, user, and booking reports.
+8.Store data permanently using text files.
+# PROJECT FEATURES
 
-## Objectives
+# 1.Admin:
+- Admin Login
+- Add Event
+- View Event
+- Search Event
+- Delete Event
+- Generate Report
+- Clear Data
+  # 2.User:
+- User Registration
+- User Login
+- View Events
+- Book Event
+- Delete Booking
+- Add Review
 
-* Manage events efficiently.
-* Allow users to register and login.
-* Allow users to view and book events.
-* Prevent duplicate event bookings.
-* Allow users to cancel bookings.
-* Allow users to add reviews for booked events.
-* Generate event, user, and booking reports.
-* Store data permanently using text files.
+# TECHNOLOGIES USED
 
-##Technologies Used
+C++
+Object-Oriented Programming
+File Handling
+Visual Studio Code
+G++ Compiler
 
-* **Language:** C++
-* **Concepts:** OOP, Classes, Objects, Functions, File Handling
-* **Compiler:** G++
-* **IDE:** Visual Studio Code
-* **Storage:** Text Files (`.txt`)
+# FILES USED
+events.txt - Stores event details
+users.txt - Stores user details
+bookings.txt - Stores booking details
+reviews.txt - Stores reviews
+report.txt - Stores report
 
-## Features
+# OOP CONCEPTS
 
-### Admin Module
+Classes
+Objects
+Encapsulation
+Member Functions
+File Handling
 
-* Admin Login
-* Add Event
-* View Events
-* Search Event
-* Delete Event
-* Generate Report
-* Clear All Data
+# HOW TO RUN?
 
-### User Module
+Compile the project using:
 
-* User Registration
-* User Login
-* View Events
-* Book Event
-* Cancel Booking
-* Add Event Review
+g++ main.cpp Event.cpp User.cpp Booking.cpp Review.cpp Report.cpp Utils.cpp -o main
 
-## Admin Login
+Run using:
 
-```text
+main.exe
+
+# ADMIN LOGIN
+
 Username: admin
 Password: 1234
-```
 
-## Event Validation
+# PROJECT PURPOSE
 
-The system accepts only **future event dates**.
+The main purpose of this project is to provide a simple system for managing events, users, bookings and reviews using C++.
 
-Event information includes:
+# FUTURE ENHANCEMENTS
 
-* Event ID
-* Event Name
-* Event Type
-* Budget
-* Location
-* Date
-
-## File Structure
-
-```text
-Event-Management-System/
-│
-├── main.cpp
-├── Event.h
-├── Event.cpp
-├── User.h
-├── User.cpp
-├── Booking.h
-├── Booking.cpp
-├── Review.h
-├── Review.cpp
-├── Report.h
-├── Report.cpp
-├── Utils.h
-├── Utils.cpp
-│
-├── events.txt
-├── users.txt
-├── bookings.txt
-├── reviews.txt
-├── PPT
-└── README.md
-```
-
-## 💾 File Handling
-
-The project stores data in separate text files:
-
-| File           | Purpose                 |
-| -------------- | ----------------------- |
-| `events.txt`   | Stores event details    |
-| `users.txt`    | Stores registered users |
-| `bookings.txt` | Stores event bookings   |
-| `reviews.txt`  | Stores user reviews     |
-
-## ▶️ How to Run
-
-### Step 1: Open Terminal
-
-Open the project folder in Visual Studio Code.
-
-### Step 2: Compile
-
-```bash
-g++ main.cpp Event.cpp User.cpp Booking.cpp Review.cpp Report.cpp Utils.cpp -o main
-```
-
-### Step 3: Run
-
-For Windows:
-
-```bash
-main.exe
-```
-
-## OOP Concepts Used
-
-* **Classes and Objects**
-* **Encapsulation**
-* **Member Functions**
-* **Modular Programming**
-* **File Handling**
-
-The project is divided into multiple classes such as:
-
-* `Event`
-* `User`
-* `Booking`
-* `Review`
-* `Report`
-
-This makes the project easier to understand, maintain, and extend.
-
-##  Future Enhancements
-
-* GUI-based interface
-* Database integration using MySQL
-* Online event booking
-* Payment integration
-* Email/SMS notifications
-* Event capacity management
-* User profile management
-* Admin dashboard
-
-##  Project
-
-**Event Management System**
-
-Developed as a C++ OOP project demonstrating event management, user management, booking, review, and report generation using file handling.
+GUI Interface
+Database Integration
+Online Payment
+Event Notifications
+Admin Dashboard
